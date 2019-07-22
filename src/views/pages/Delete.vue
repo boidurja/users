@@ -8,9 +8,10 @@
                 hide-details 
                 outline 
                 label="Enter Id to delete"
+                @blur="userIdtoDelete($event.target.value)"
             >
             </v-text-field>
-            <v-btn @click="userIdtoDelete" color="error">Delete</v-btn>
+            <v-btn @click="" color="error">Delete</v-btn>
             </form>
         </div>
     </v-container>
@@ -36,7 +37,7 @@ export default {
         }
     },
     methods: {
-        userIdtoDelete () {
+        userIdtoDelete (id) {
 
             /*if (this.idToDelete == '') {
                 alert('Empty Field')
