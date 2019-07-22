@@ -3,7 +3,7 @@
         <div class="mt-3">
             <form>
             <v-text-field 
-                v-model="idToDelete" 
+                
                 type="number" 
                 hide-details 
                 outline 
