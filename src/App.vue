@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Header v-if="showMenu" />
+    <Header v-show="showMenu" />
     <Sidebar />
     <v-content>
       <router-view></router-view>
@@ -12,7 +12,6 @@
 
 import Header from '@/views/common/Header.vue'
 import Sidebar from '@/views/common/Sidebar.vue'
-import Login from '@/views/pages/Login.vue'
 
 export default {
   name: 'App',
